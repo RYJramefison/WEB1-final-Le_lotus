@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+nav {
+    background-color: rgb(223, 223, 226);
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+}
+
+nav a {
+    /* display: flex;
+    flex-direction: row; */
+    color: black;
+    text-decoration: none;
+}
+.leLotusIconNav {
+    display: flex;
+    flex-basis: 30%;
+}
+.leLotusIconNav img {
+    width: 15%;
+    height: 20%;
+}
+.navigation {
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+    font-size: 1.1rem;
+}
