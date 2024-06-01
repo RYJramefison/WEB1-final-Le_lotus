@@ -6,19 +6,21 @@
 }
 
 nav {
-    background-color: rgb(223, 223, 226);
+    background-color: rgb(248, 248, 248);
     height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-inline: 5%;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     /* display: flex;
     flex-direction: row; */
-    color: black;
+    color: rgb(27, 27, 27);
     text-decoration: none;
 }
 .leLotusIconNav {
@@ -34,4 +36,14 @@ nav a {
     display: flex;
     gap: 40px;
     font-size: 1.1rem;
+}
+header {
+    background-image: url(../image/EXTERIEUR_02.JPG);
+    background-size:cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
