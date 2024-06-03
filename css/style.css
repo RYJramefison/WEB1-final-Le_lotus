@@ -18,9 +18,9 @@ img{
 
 
 
-
+/* section nos bungalow */
 #nosBungalow {
-    margin: 3% 1%;
+    margin: 5% 1%;
     background-color: rgb(251, 251, 251);
     height: 82vh;
     box-shadow: 0px 0px 20px rgb(164, 162, 162);
@@ -72,4 +72,62 @@ img{
     display: flex;
     flex-direction: row;
     margin-block: 3%;
+}
+
+/* section activite */
+
+#activite {
+    height: 90vh;
+    margin: 5% 1%;
+    /* border: solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    /* gap: 1dvw; */
+}
+.titleActivite {
+    flex-basis: 10%;
+    /* margin: 5%; */
+}
+.titleSection {
+    font-size: 2.3rem;
+    color: black;
+}
+.containActivite{
+    margin-top: 7dvh;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    gap: 1.56dvh;
+}
+.descriptionActivite {
+    padding-left: 2vw;
+    width: 30%;
+    background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../images/EXTERIEUR_13.JPG);
+    background-size: cover;
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+.pictureActivite {
+    background-image: url(../images/EXTERIEUR_05.JPG);
+    background-size: 200%;
+    background-position: right;
+    width: 30%;
+    height: 55%;
+    margin-top: -2%;
+}
+.descLast {
+    margin-top: -5%;
 }
