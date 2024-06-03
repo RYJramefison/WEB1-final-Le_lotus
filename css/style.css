@@ -3,9 +3,77 @@
 @tailwind utilities;
 
 header{
-    background-image: url(../image/320362696_897356781630472_1264962660336226523_n.jpg);
+    background: linear-gradient(rgba(0,0, 0, 0.6), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
+    background-size: cover;
+    height: 100dvh;
+    text-align: center;
+    padding-top: 20%;
+    h2{
+        font-size: 5rem;
+        color: white;
+    }
+
+    span{
+        font-size: 2rem;
+        color: rgb(255, 253, 254); 
+    }
+}
+
+p{
+    transition: 0.5s;
 }
 
 nav{
-    background-color: rgba(255, 255, 255, 0.212);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10dvh;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0 5dvw;
+    display: flex;
+    justify-content: space-between;
+    .link{
+        height: 50%;
+        margin: auto 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 1.1rem;
+        /* font-weight: bold; */
+    }
+    .reservation{
+        margin: auto 0;
+        height: 50%;
+        padding: 1dvh 1.5dvw;
+        border-radius: 10ch;
+        background-color: green;
+        transition: 0.5s;
+        color: white;
+        text-align: center;
+    }
+    .reservation:hover{
+        transform: scale(1.2);
+    }
+    img{
+        margin: 1dvh 0;
+    }
+    p:hover{
+        transform: scale(1.2);
+        border-bottom: solid 1px white;
+    }
+
+    select{
+        height: fit-content;
+        margin: auto 0;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        option{
+            color: black;
+        }
+    }
 }
+
