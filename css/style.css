@@ -77,3 +77,120 @@ nav{
     }
 }
 
+
+
+
+/* section nos bungalow */
+#nosBungalow {
+    margin: 5% 1%;
+    background-color: rgb(251, 251, 251);
+    height: 82vh;
+    box-shadow: 0px 0px 20px rgb(164, 162, 162);
+    border-radius: 1ch;
+    display: flex;
+    flex-direction: row;
+}
+.allBungalow {
+    flex-basis: 44%;
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.bungalowPicture {
+    /* border: solid black; */
+    flex-basis: 56%;
+    background-image: url(../images/BUNGALOW_01_1.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 1ch 1ch 0;
+}
+.title {
+    font-size: xx-large;
+    margin-bottom: 5%;
+}
+.differentBungalow {
+    margin-inline: 5%;
+    overflow: scroll;
+}
+.differentBungalow img {
+    width: 33%;
+}
+.containBungalow p{
+    font-size:x-large;
+    margin-bottom: 2%;
+}
+.containBungalow span{
+    color: rgb(49, 49, 49);
+}
+.containBungalow {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 5%;
+}
+.bungalowImage {
+    display: flex;
+    flex-direction: row;
+    margin-block: 3%;
+}
+
+/* section activite */
+
+#activite {
+    height: 90vh;
+    margin: 5% 1%;
+    /* border: solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    /* gap: 1dvw; */
+}
+.titleActivite {
+    flex-basis: 10%;
+    /* margin: 5%; */
+}
+.titleSection {
+    font-size: 2.3rem;
+    color: black;
+}
+.containActivite{
+    margin-top: 7dvh;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    gap: 1.56dvh;
+}
+.descriptionActivite {
+    padding-left: 2vw;
+    width: 30%;
+    background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../images/EXTERIEUR_13.JPG);
+    background-size: cover;
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+.pictureActivite {
+    background-image: url(../images/EXTERIEUR_05.JPG);
+    background-size: 200%;
+    background-position: right;
+    width: 30%;
+    height: 55%;
+    margin-top: -2%;
+}
+.descLast {
+    margin-top: -5%;
+}
+
