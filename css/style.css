@@ -58,7 +58,17 @@ nav{
         transform: scale(1.2);
     }
     img{
-        margin: 1dvh 0;
+        /* width: 8%;
+        aspect-ratio: 1/1; */
+        /* margin: 1dvh 0; */
+        width: 90%;
+        height: 100%;
+    }
+    .logo {
+        /* border: 2px solid white; */
+        /* flex-basis: 20%; */
+        text-align: center;
+        width: 10%;
     }
     p:hover{
         transform: scale(1.2);
