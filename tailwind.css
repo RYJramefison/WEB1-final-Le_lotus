@@ -818,6 +818,18 @@ video {
   display: none;
 }
 
+.h-1\/5 {
+  height: 20%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1798,6 +1810,15 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2409,6 +2430,10 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+header{
+  background-image: url(../image/320362696_897356781630472_1264962660336226523_n.jpg);
 }
 
 @media (min-width: 640px) {
