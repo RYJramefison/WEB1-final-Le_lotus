@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 header{
-    background: linear-gradient(rgba(0,0, 0, 0.6), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
+    background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
     background-size: cover;
     height: 100dvh;
     text-align: center;
@@ -24,11 +24,12 @@ p{
 }
 
 nav{
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
     height: 10dvh;
-    background-color: transparent;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.514));
     margin: 0 auto;
     padding: 0 5dvw;
     display: flex;
@@ -112,7 +113,7 @@ nav{
 .bungalowPicture {
     /* border: solid black; */
     flex-basis: 56%;
-    background-image: url(../images/BUNGALOW_01_1.JPG);
+    background-image: url(../image/BUNGALOW_01_1.JPG);
     background-size: cover;
     background-position: center;
     border-radius: 0 1ch 1ch 0;
@@ -183,7 +184,7 @@ nav{
 .descriptionActivite {
     padding-left: 2vw;
     width: 30%;
-    background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../images/EXTERIEUR_13.JPG);
+    background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../image/EXTERIEUR_13.JPG);
     background-size: cover;
     height: 47%;
     display: flex;
@@ -193,7 +194,7 @@ nav{
     
 }
 .pictureActivite {
-    background-image: url(../images/EXTERIEUR_05.JPG);
+    background-image: url(../image/EXTERIEUR_05.JPG);
     background-size: 200%;
     background-position: right;
     width: 30%;
@@ -204,3 +205,107 @@ nav{
     margin-top: -5%;
 }
 
+#Gastronomie{
+    height: 100dvh;
+    width: 60%;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../image/406271593_856232949539372_4276330455097852888_n.jpg);
+    background-size: cover;
+    .gastro_content1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1dvh;
+    }
+
+    h1{
+        color: rgb(233, 63, 233);
+        font-size: 3rem;
+        text-align: center;
+        span{
+            font-size: 2rem;
+            color: white;
+        }
+    }
+
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8dvh;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        span{
+            font-size: 2rem;
+        }
+    }
+
+    .gastro_content1 div:first-child{
+        background-image: url(../image/PLATS_10.JPG);
+        background-size: cover;
+    }
+    .gastro_content1 div:nth-child(2){
+        background-image: url(../image/PLATS_16.JPG);
+        background-size: cover;
+    }
+
+    .gastro_content2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -25dvh;
+    }
+
+    .gastro_content2 div:first-child{
+        background-image: url(../image/PLATS_22.JPG);
+        background-size: cover;
+    }
+
+    .gastro_content2 div:nth-child(2){
+        background-image: url(../image/PLATS_25.JPG);
+        background-size: cover;
+    }
+    .gastro1{
+        border: 4px solid rgb(48, 163, 48);
+        width: 20%;
+        aspect-ratio: 1/1;
+        transform: rotate(45deg);
+        border-radius: 2ch;
+    }
+    .gastro3{
+        border: 4px solid rgb(48, 163, 48);
+        width: 35%;
+        margin: -10dvh auto;
+        aspect-ratio: 1/1;
+        transform: rotate(45deg);
+        border-radius: 2ch;
+        background-image: url(../image/318607761_529092182577575_2559613292856495025_n.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+#Reservation{
+    padding-top: 20dvh;
+    height: 100dvh;
+    width: 80%;
+    border: 2px solid red;
+    margin-top: 10dvh;
+    margin-inline: auto;
+    background: linear-gradient(rgba(26, 8, 26, 0.781), rgba(0, 0, 0, 0.719)), url(../image/EXTERIEUR_15.JPG);
+    background-size: cover;
+    h1{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    form{
+        border: 2px solid blue;
+        height: 70%;
+        width: 70%;
+        margin: 5dvh auto;
+    }
+}
