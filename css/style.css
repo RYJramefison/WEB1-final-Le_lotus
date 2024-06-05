@@ -93,13 +93,26 @@ nav{
 
 /* section nos bungalow */
 #nosBungalow {
-    margin: 5% 3%;
-    background-color: rgb(251, 251, 251);
-    height: 78vh;
-    box-shadow: 0px 0px 20px rgb(164, 162, 162);
+    margin: 5% 5%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    /* border: solid black; */
+    justify-content: center;
+    align-items: center;
+}
+.containNosBungalow:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 5px 20px rgb(210, 209, 209);
+}
+.containNosBungalow {
+    transition: 0.7s;
     border-radius: 1ch;
+    background-color: rgb(251, 251, 251);
+    height: 50%;
     display: flex;
     flex-direction: row;
+    flex-basis: 90%;
 }
 .allBungalow {
     flex-basis: 44%;
@@ -182,6 +195,7 @@ nav{
 .titleSection {
     font-size: 2.3rem;
     color: black;
+    margin-bottom: 2%;
 }
 .containActivite{
     margin-top: 7dvh;
