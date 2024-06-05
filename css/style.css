@@ -183,7 +183,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     color: white;
     text-align: center;
     /* gap: 1dvw; */
@@ -221,12 +221,23 @@ nav{
     
 }
 .pictureActivite {
-    background-image: url(../image/EXTERIEUR_05.JPG);
     background-size: 200%;
     background-position: right;
     width: 30%;
     height: 55%;
     margin-top: -2%;
+}
+.activite1 {
+    background-image: url(../image/EXTERIEUR_05.JPG);
+}
+.activite2 {
+    background-image: url(../image/FB_IMG_17173536922294724.jpg);
+    background-size: cover;
+}
+.activite3 {
+    background-image: url(../image/FB_IMG_17173537921220110.jpg);
+    /* background:linear-gradient(rgba(227, 222, 69, 0.002),rgba(237, 224, 161, 0.151)), url(../image/FB_IMG_17173537921220110.jpg); */
+    background-size: cover;
 }
 .descLast {
     margin-top: -5%;
