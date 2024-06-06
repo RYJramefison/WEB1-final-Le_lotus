@@ -35,3 +35,15 @@ window.addEventListener('scroll', function() {
         window.removeEventListener('scroll', arguments.callee);
     }
 });
+
+
+
+
+const fermer = document.querySelector(".close");
+const ouvrir = document.querySelector(".bars");
+const navigation = document.querySelector(".link");
+ouvrir.addEventListener('click',function(){
+    navigation.style.display = "flex";
+})
+fermer.addEventListener('click',function(){
+    navigation.style.display = "none"});
