@@ -340,11 +340,68 @@ nav{
         font-size: 2rem;
         text-align: center;
     }
+
+    .one{
+        height: fit-content;
+        width: 48%;
+        div{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            gap: 1dvw;
+            margin-bottom: 1dvh;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(100%);
+        }
+
+        input{
+            width: 100%;
+            height: 4dvh;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            outline: none;
+        }
+
+        select{
+            width: 100%;
+            height: 4dvh;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            outline: none;
+            option{
+                background-color: rgba(204, 34, 204, 0.295);
+                color: black;
+            }
+        }
+    }
     form{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         height: 70%;
         width: 70%;
         margin: 5dvh auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2dvw;
+        color: white;
+        .button_reservation{
+            width: 20%;
+            background-color: rgb(212, 45, 157);
+            border-radius: 10ch;
+            margin: 0 auto;
+            button{
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+        }
+    }
+
+    img{
+        height: 2rem;
     }
 }
 
