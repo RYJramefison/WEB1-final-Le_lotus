@@ -206,14 +206,14 @@ nav{
     flex-wrap: wrap;
     color: white;
     text-align: center;
-    gap: 1.56dvh;
+    gap: 2dvh;
 }
 .descriptionActivite {
     padding-left: 2vw;
-    width: 30%;
+    width: 27%;
     background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../image/EXTERIEUR_13.JPG);
     background-size: cover;
-    height: 47%;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,8 +223,8 @@ nav{
 .pictureActivite {
     background-size: 200%;
     background-position: right;
-    width: 30%;
-    height: 55%;
+    width: 27%;
+    height: 53%;
     margin-top: -2%;
 }
 .activite1 {
@@ -347,3 +347,139 @@ nav{
         margin: 5dvh auto;
     }
 }
+
+footer {
+    height: 50vh;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    flex-basis: 91%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact1,.contact2,.contact3 {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contact1 .pictureJRAM {
+    margin-top: 20px ;
+    margin-left: -10px;
+    width: 50%;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact1 .pictureJRAM img {
+    width: 33%;
+    height: 65%;
+}
+.contact1 .pictureJRAM p {
+    color: white;
+    font-size: 1.2rem;
+}
+.contact1 .pictureJRAM p::after {
+    color: rgb(220, 49, 247);
+    content: "s";
+}
+.contact1 .description p{
+    color: rgb(168, 168, 168);
+}
+.contact1 .description {
+    color: white;
+    
+    flex-basis: 33%;
+}
+.count {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 20px;
+}
+.count img {
+    width: 1.2vw;
+    height: 2.5vh;
+}
+.divCount {
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5ch;
+    width: 1.9vw;
+    height: 4vh;
+    transition: 0.1s;
+}
+.facebook img {
+    width: 1.4vw;
+    height: 3vh;
+    margin-bottom: -25%;
+    display: flex;
+    
+} 
+.divCount:hover {
+    transform: scale(1.1);
+    background-color: #ff8d14;
+}
+.contact2,.contact3 {
+    justify-content: center;
+    gap: 20px;
+}
+.contact2 p {
+    color: rgb(168, 168, 168);
+}
+.contact2 .title {
+    color: white;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+.contact3 p {
+    color: white;
+    font-weight: 700;
+}
+.contact3 .input input{
+    padding-left: 10px;
+    width: 15vw;
+    height: 6vh;
+    border: none;
+    outline: none;
+    border-radius: 2px 0 0 2px;
+    font-size: medium;
+}
+.contact3 .input button{
+    width: 6vw;
+    height: 6vh;
+    background-color: #ff8d14f9;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.askSend {
+    padding-block: 26px;
+    padding-inline: 18px;
+    right: 1vw;
+    bottom: -5vh;
+    background-color: rgb(52, 121, 52);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 100;
+    display: none;
+    position: absolute;
+    border-radius: 20ch;
+}
+
+
