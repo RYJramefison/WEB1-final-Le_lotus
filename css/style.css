@@ -9,7 +9,7 @@ header{
     text-align: center;
     padding-top: 20%;
     h2{
-        font-size: 5rem;
+        font-size: 4rem;
         color: white;
     }
 
@@ -252,7 +252,7 @@ nav{
     .gastro_content1{
         display: flex;
         justify-content: space-around;
-        margin-top: 1dvh;
+        margin-top: -3dvh;
     }
 
     h1{
@@ -277,7 +277,7 @@ nav{
         font-size: 3rem;
         text-align: center;
         span{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -330,7 +330,6 @@ nav{
     padding-top: 20dvh;
     height: 100dvh;
     width: 80%;
-    border: 2px solid red;
     margin-top: 10dvh;
     margin-inline: auto;
     background: linear-gradient(rgba(26, 8, 26, 0.781), rgba(0, 0, 0, 0.719)), url(../image/EXTERIEUR_15.JPG);
@@ -379,7 +378,6 @@ nav{
         }
     }
     form{
-        /* border: 2px solid blue; */
         height: 70%;
         width: 70%;
         margin: 5dvh auto;
@@ -388,7 +386,7 @@ nav{
         gap: 2dvw;
         color: white;
         .button_reservation{
-            width: 20%;
+            width: 25%;
             background-color: rgb(212, 45, 157);
             border-radius: 10ch;
             margin: 0 auto;
