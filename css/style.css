@@ -475,6 +475,17 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
+    transition: 0.5s;
+}
+footer .facebook:hover {
+    background-color: rgb(83, 83, 239);
+}
+footer .whatsapp:hover {
+    background-color: rgb(25, 189, 33);
+}
+.containContact a {
+    color: white;
+    cursor: pointer;
 }
 .contact2,.contact3 {
     justify-content: center;
