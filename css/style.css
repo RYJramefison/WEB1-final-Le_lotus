@@ -407,7 +407,7 @@ nav{
 }
 
 footer {
-    height: 50vh;
+    height: 45vh;
     background-color: rgb(10, 10, 10);
     display: flex;
     flex-direction: column;
