@@ -205,6 +205,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     color: white;
+
     text-align: center;
     gap: 2dvh;
 }
@@ -218,7 +219,6 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: left;
-    
 }
 .pictureActivite {
     background-size: 200%;
@@ -411,6 +411,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5%;
 }
 .contact {
     display: flex;
@@ -455,40 +456,32 @@ footer {
     
     flex-basis: 33%;
 }
-.count {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    margin: 20px;
-}
-.count img {
-    width: 1.2vw;
-    height: 2.5vh;
-}
-.divCount {
-    display: flex;
-    background-color: #f2f2f2;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5ch;
-    width: 1.9vw;
-    height: 4vh;
-    transition: 0.1s;
-}
-.facebook img {
+
+
+.contact3 img {
     width: 1.4vw;
     height: 3vh;
     margin-bottom: -25%;
     display: flex;
     
 } 
-.divCount:hover {
-    transform: scale(1.1);
-    background-color: #ff8d14;
+.imageContact3 {
+    width: 2vw;
+    height: 4vh;
+    border-radius: 1ch 0 1ch 0;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
 .contact2,.contact3 {
     justify-content: center;
     gap: 20px;
+}
+.contact1 {
+    flex-basis: 33%;
+
 }
 .contact2 p {
     color: rgb(168, 168, 168);
@@ -500,43 +493,17 @@ footer {
 }
 .contact3 p {
     color: white;
-    font-weight: 700;
 }
-.contact3 .input input{
-    padding-left: 10px;
-    width: 15vw;
-    height: 6vh;
-    border: none;
-    outline: none;
-    border-radius: 2px 0 0 2px;
-    font-size: medium;
-}
-.contact3 .input button{
-    width: 6vw;
-    height: 6vh;
-    background-color: #ff8d14f9;
-    border: none;
-    border-radius: 0 2px 2px 0;
-    font-size: 0.9rem;
-    font-weight: bolder;
-}
-.input {
+.containContact {
     display: flex;
     flex-direction: row;
-    position: relative;
+    gap: 2%;
 }
-.askSend {
-    padding-block: 26px;
-    padding-inline: 18px;
-    right: 1vw;
-    bottom: -5vh;
-    background-color: rgb(52, 121, 52);
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 100;
-    display: none;
-    position: absolute;
-    border-radius: 20ch;
+.containContact img {
+    text-align: center;
+    margin-bottom: 1%;
 }
+
+
 
 
