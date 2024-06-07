@@ -31,19 +31,22 @@ nav{
     height: 10dvh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.514));
     margin: 0 auto;
-    padding: 0 5dvw;
+    padding: 0 3%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     .link{
+        /* background-color: green; */
         height: 50%;
         margin: auto 0;
-        width: 50%;
-        display: flex;
-        align-items: center;
+        flex-basis: 55%;
         justify-content: space-around;
+        display: flex;
+        flex-direction : row;
+        align-items: center;
+
         color: white;
         font-size: 1.1rem;
-        /* font-weight: bold; */
         .reservation_p {
             display: none;
         }
@@ -54,12 +57,14 @@ nav{
     }
 
     .reservation{
-        margin: auto 0;
         height: 50%;
         padding: 1dvh 1.5dvw;
         border-radius: 10ch;
         background-color: green;
         transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: white;
         text-align: center;
     }
@@ -70,14 +75,15 @@ nav{
         /* width: 8%;
         aspect-ratio: 1/1; */
         /* margin: 1dvh 0; */
-        width: 90%;
-        height: 100%;
+        width: 35%;
+        height: 75%;
     }
     .logo {
         /* border: 2px solid white; */
-        /* flex-basis: 20%; */
-        text-align: center;
-        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 20%;
     }
     p:hover{
         transform: scale(1.2);
@@ -95,6 +101,13 @@ nav{
         option{
             color: black;
         }
+    }
+    .reservationButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 40%;
     }
 }
 
@@ -134,12 +147,39 @@ nav{
     margin-bottom: 3%;
 }
 .bungalowPicture {
+    transition: background-image 1s ;
     /* border: solid black; */
     flex-basis: 56%;
     background-image: url(../image/BUNGALOW_01_1.JPG);
     background-size: cover;
     background-position: center;
     border-radius: 0 1ch 1ch 0;
+}
+.gris {
+    background-color: rgb(226, 224, 224);
+}
+.showBungalow1 {
+    background-image: url(../image/BUNGALOW_01_1.JPG);
+}
+
+.showBungalow2 {
+    background-image: url(../image/BUNGALOW_02_1.JPG);
+}
+
+.showBungalow3 {
+    background-image: url(../image/BUNGALOW_07_1.JPG);
+}
+
+.showBungalow4 {
+    background-image: url(../image/BUNGALOW_04_1.JPG);
+}
+
+.showBungalow5 {
+    background-image: url(../image/BUNGALOW_05_3.JPG);
+}
+
+.showBungalow6 {
+    background-image: url(../image/BUNGALOW_08_2.JPG);
 }
 .title {
     font-size: xx-large;
@@ -378,7 +418,7 @@ nav{
         }
 
         select{
-            width: 100%;
+            width: 60%;
             height: 4dvh;
             color: white;
             background-color: transparent;
@@ -531,28 +571,33 @@ footer .whatsapp:hover {
 @media only screen and (max-width: 700px) {
 
     header{
+        margin-bottom: 15%;
         background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
         background-size: cover;
+        background-position: center;
         height: 100dvh;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 20%;
         h2{
-            font-size: 4rem;
+            margin-bottom: 7%;
+            font-size: 2.5rem;
+            text-align: center;
             color: white;
         }
     
         span{
-            font-size: 2rem;
-            color: rgb(255, 253, 254); 
+            font-size: 1.20rem;
+            color: rgb(0, 0, 0); 
         }
     }
     
     p{
         transition: 0.5s;
     }
-    .reservation_p {
-        display: none;
-    }
+    
     nav{
         z-index: 1;
         position: fixed;
@@ -561,73 +606,82 @@ footer .whatsapp:hover {
         height: 10dvh;
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.514));
         margin: 0 auto;
-        padding: 0 5dvw;
+        padding: 0 3%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         .link{
-            right: 100%;
+            transition: 2s; 
+            background-color:rgb(41, 41, 41);
             position: absolute;
             height: 100vh;
-            background-color:  rgb(51, 51, 51);
-            width: 100%;
-            font-size: 1.5rem;
             left: 0;
-            display: flex;
-            flex-direction : column;
-            /* justify-content : space-around; */
-            gap: 7%;
-            /* padding-left: 15%; */
-            padding-top: 15%;
-            color: rgb(236, 74, 236);
+            right: 100%;
+            padding-top: 20%;
+            padding-left: 10%;
+            /* right: 0; */
+            color: white;
+            font-size: 1.15rem;
+            display: none;
             .reservation_p {
-                display: block;
+                display: flex;
             }
         }
-            .close {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                width: 8%;
-                height: 4%;
-            }
-            
-        .showNavigation {
+        .showLink {
             right: 0;
+            display: block;
         }
-    }
-        header {
-            color: rgb(51, 51, 51);
+        .link p {
+            padding:6%;
         }
+        .close{
+            display: none;
+        }
+        .showClose {
+            
+            display: block;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 7%;
+            height: 4%;
+        }
+    
         .reservation{
             display: none;
         }
         .reservation:hover{
             transform: scale(1.2);
         }
-        img{
-            /* width: 8%;
-            aspect-ratio: 1/1; */
-            /* margin: 1dvh 0; */
-            width: 100%;
-            height: 50%;
-            margin: 0 auto;
-
-        }
         .logo {
             /* border: 2px solid white; */
-            /* flex-basis: 20%; */
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            width: 18%;
-            height: 100%;
+            flex-basis: 20%;
+            img{
+                /* width: 8%;
+                aspect-ratio: 1/1; */
+                /* margin: 1dvh 0; */
+                width: 90%;
+                height: 50%;
+            }
         }
         p:hover{
-            transform: scale(1.2);
-            border-bottom: solid 1px white;
+            transform: scale(1.01);
+            /* border-bottom: solid 1px white; */
         }
-    
+        .menuBars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -10%;
+            .bars {
+                width: 27%;
+                height: 27%;
+            }
+
+        }
         select{
             height: fit-content;
             margin: auto 0;
@@ -638,24 +692,488 @@ footer .whatsapp:hover {
                 color: black;
             }
         }
+        .reservationButton {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 40%;
+        }
+    }
+    
+    #nosBungalow {
+        margin-inline: 5%;
+        margin-top: 5%;
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+        /* border: solid black; */
+        justify-content: center;
+        align-items: center;
+    }
+    .containNosBungalow:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 5px 20px rgb(210, 209, 209);
+    }
+    .containNosBungalow {
+        transition: 0.7s;
+        border-radius: 1ch;
+        background-color: rgb(251, 251, 251);
+        height: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-basis: 90%;
+    }
+    .allBungalow {
+        flex-basis: 44%;
+        /* border: solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+        height: 40vh;
+        padding-bottom: 5%;
+    }
+    .bungalowPicture {
+        z-index: 10;
+        /* border: solid black; */
+        flex-basis: 56%;
+        background-image: url(../image/BUNGALOW_01_1.JPG);
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1ch 1ch 0 0;
+    }
+    /* .allBungalow .title {
+        display: none;
+    } */
+    .title {
+        font-size: x-large;
+        margin-bottom: 5%;
+    }
+    .allBungalow .title {
+        margin-top:3% ;
+        margin-bottom: 0;
+    
+    }
+    .allBungalow .spanBungalow {
+        margin-block: 0% 3%;
+        color: rgb(128, 125, 125);
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
+    }
+    .differentBungalow {
+        margin-inline: 5%;
+        overflow: scroll;
+        margin-bottom: -3%;
+    }
+    .differentBungalow img {
+        width: 33%;
+    }
+    .containBungalow p{
+        font-size:x-large;
+        margin-bottom: 2%;
+    }
+    .containBungalow span{
+        color: rgb(49, 49, 49);
+    }
+    .containBungalow {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 0 0 5%;
+    }
+    .bungalowImage {
+        display: flex;
+        flex-direction: row;
+        margin-block: 3%;
+    }
+    .titleSection {
+        font-size: 1.7rem;
+        color: black;
+        margin-bottom: 7%;
     }
 
-    .menuBars {
-        /* border: solid green; */
+
+
+    #activite {
+        height: 210vh;
+        /* border: solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        color: white;
+        text-align: center;
+        /* gap: 1dvw; */
+    }
+    .titleActivite {
+        flex-basis: 10%;
+        /* margin: 5%; */
+    }
+    .containActivite{
+        margin-top: 7dvh;
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: column;       
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+    
+        text-align: center;
+        gap: 2dvh;
+    }
+    .descriptionActivite {
+        padding-left: 2vw;
+        width: 90%;
+        background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../image/EXTERIEUR_13.JPG);
+        background-size: cover;
+        height: 16%;
         display: flex;
         justify-content: center;
         align-items: center;
-        img {
-            width: 100%;
+        text-align: left;
+        margin-bottom: -3%;
+        padding-inline: 10%;
+    }
+    .pictureActivite {
+        margin-top: -2%;
+        background-size: 200%;
+        background-position: right;
+        width: 90%;
+        height: 16%;
+        margin-top: -2%;
+    }
+    .descriptionActivite1 {
+        border-radius:  2.5ch 2.5ch 0 0;
+        /* margin-inline: 5%; */
 
+    }
+    .descriptionActivite2 {
+        width: 93%;
+        border-radius: 1rem 0 0 0;
+        
+    }
+    .activite1 {
+        background-image: url(../image/FB_IMG_17173536922294724.jpg);
+        background-size: cover;
+    }
+    .activite2 {
+        background-image: url(../image/FB_IMG_17173537921220110.jpg);
+        background-size: cover;
+        width: 93%;
+        border-radius: 0 0 1rem 0;
+    }
+    .activite3 {
+        background-image: url(../image/EXTERIEUR_05.JPG);
+        border-radius: 0 0 2.5ch 2.5ch;
+        /* background:linear-gradient(rgba(227, 222, 69, 0.002),rgba(237, 224, 161, 0.151)), url(../image/FB_IMG_17173537921220110.jpg); */
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #Gastronomie{
+        height: 100dvh;
+        border: solid black;
+        width: 90%;
+        margin: 0 auto;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../image/406271593_856232949539372_4276330455097852888_n.jpg);
+        background-size: cover;
+        .gastro_content1{
+            display: flex;
+            height: 25%;
+            justify-content: space-around;
         }
+    
+        h1{
+            color: rgb(233, 63, 233);
+            font-size: 3rem;
+            text-align: center;
+            span{
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: -2.7dvh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            span{
+                font-size: 0.8rem;
+            }
+        }
+    
+        .gastro_content1 div:first-child{
+            background-image: url(../image/PLATS_10.JPG);
+            background-size: cover;
+        }
+        .gastro_content1 div:nth-child(2){
+            background-image: url(../image/PLATS_16.JPG);
+            background-size: cover;
+        }
+    
+        .gastro_content2{
+            display: flex;
+            height: 25%;
+            justify-content: space-around;
+        }
+    
+        .gastro_content2 div:first-child{
+            background-image: url(../image/PLATS_22.JPG);
+            background-size: cover;
+        }
+    
+        .gastro_content2 div:nth-child(2){
+            background-image: url(../image/PLATS_25.JPG);
+            background-size: cover;
+        }
+        .gastro1{
+            border: 2px solid rgb(48, 163, 48);
+            width: 45%;
+            height: 80%;
+            margin: auto 0;
+            aspect-ratio: 1/1;
+            /* transform: rotate(45deg); */
+            border-radius: 2ch;
+            background-position: center;
+        }
+        .gastro3{
+            border: 4px solid rgb(48, 163, 48);
+            width: 80%;
+            height: 30%;
+            margin-inline:  auto;
+            aspect-ratio: 1/1;
+            /* transform: rotate(45deg); */
+            border-radius: 2ch;
+            background-image: url(../image/318607761_529092182577575_2559613292856495025_n.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
     }
-    /* header h2 {
-        font-size: 10px;
+    
+    footer {
+        height: 45dvh;
+        background-color: rgb(10, 10, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
     }
-    header span {
-        font-size: 10px;
+    .contact {
+        display: flex;
+        height: 100%;
+        /* flex-basis: 91%; */
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    /* .contact1,.contact2,.contact3 {
+        width: 30%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
     } */
 
+    .contact1{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .contact3{
+        margin-top: 2%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contact1 .pictureJRAM {
+        margin-top: 20px ;
+        margin-left: -10px;
+        width: 50%;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contact1 .pictureJRAM img {
+        width: 33%;
+        height: 80%;
+    }
+    .contact1 .pictureJRAM p {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .contact1 .pictureJRAM p::after {
+        color: rgb(220, 49, 247);
+        content: "s";
+    }
+    .contact1 .description p{
+        color: rgb(168, 168, 168);
+    }
+    .contact1 .description {
+        color: white;
+        
+        flex-basis: 33%;
+    }
+    
+    
+    .contact3 img {
+        width: 1.4vw;
+        height: 3vh;
+        margin-bottom: -25%;
+        display: flex;
+        
+    } 
+    .imageContact3 {
+        width: 10%;
+        height: 4vh;
+        border-radius: 1ch 0 1ch 0;
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 5%; */
+        transition: 0.5s;
+        left: 0;
+    }
+    footer .facebook:hover {
+        background-color: rgb(83, 83, 239);
+    }
+    footer .whatsapp:hover {
+        background-color: rgb(25, 189, 33);
+    }
+    .containContact a {
+        color: white;
+        cursor: pointer;
+    }
+    .contact2 p {
+        color: rgb(168, 168, 168);
+    }
+    .contact2 .title {
+        color: white;
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+    .contact3 p {
+        color: white;
+    }
+    .containContact {
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .containContact img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    #Reservation{
+        padding-top: 3dvh;
+        height: 90dvh;
+        width: 80%;
+        margin-top: 10dvh;
+        margin-inline: auto;
+        background: linear-gradient(rgba(26, 8, 26, 0.781), rgba(0, 0, 0, 0.719)), url(../image/EXTERIEUR_15.JPG);
+        background-size: cover;
+        h1{
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    
+        .one{
+            height: fit-content;
+            width: 100%;
+            div{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                gap: 2dvw;
+                margin-bottom: 1dvh;
+            }
+    
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                filter: invert(100%);
+            }
+    
+            input{
+                width: 100%;
+                height: 4dvh;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                outline: none;
+            }
+    
+            select{
+                width: 80%;
+                height: 4dvh;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                outline: none;
+                option{
+                    background-color: rgba(204, 34, 204, 0.295);
+                    color: black;
+                }
+            }
+        }
+        form{
+            height: 70%;
+            width: 90%;
+            margin: 5dvh auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2dvh;
+            color: white;
+            .button_reservation{
+                width: 60%;
+                height: 5dvh;
+                background-color: rgb(212, 45, 157);
+                border-radius: 10ch;
+                margin: 0 auto;
+                margin-top: 3dvh;
+                button{
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                }
+            }
+        }
+    
+        img{
+            height: 2rem;
+        }
+    }
+}
 
 

@@ -43,7 +43,32 @@ const fermer = document.querySelector(".close");
 const ouvrir = document.querySelector(".bars");
 const navigation = document.querySelector(".link");
 ouvrir.addEventListener('click',function(){
-    navigation.style.display = "flex";
+    navigation.classList.toggle("showLink");
+    fermer.classList.toggle("showClose");
 })
 fermer.addEventListener('click',function(){
-    navigation.style.display = "none"});
+    navigation.classList.remove("showLink");
+    fermer.classList.remove("showClose");
+    
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const bungalows = document.querySelectorAll('.bungalowImage');
+    const bungalowPicture = document.querySelector('.bungalowPicture');
+
+    bungalows.forEach(bungalow => {
+        bungalow.addEventListener('click', () => {
+            bungalows.forEach(b => b.style.backgroundColor = '');
+
+            bungalow.style.backgroundColor = 'rgb(226, 224, 224)';
+            bungalowPicture.className = bungalowPicture.className.replace(/\bshowBungalow\S+/g, '');
+
+            const bungalowId = bungalow.id;
+            bungalowPicture.classList.add(`show${bungalowId.charAt(0).toUpperCase() + bungalowId.slice(1)}`);
+        });
+    });
+});
+
