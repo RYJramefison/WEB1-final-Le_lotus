@@ -610,42 +610,59 @@ footer .whatsapp:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .link{
-            transition: 2s; 
-            background-color:rgb(41, 41, 41);
-            position: absolute;
-            height: 100vh;
-            left: 0;
-            right: 100%;
-            padding-top: 20%;
-            padding-left: 10%;
-            /* right: 0; */
-            color: white;
-            font-size: 1.15rem;
-            display: none;
-            .reservation_p {
-                display: flex;
-            }
-        }
-        .showLink {
-            right: 0;
-            display: block;
-        }
         .link p {
             padding:6%;
         }
-        .close{
-            display: none;
+        .link {
+            background-color: rgb(41, 41, 41);
+            position: absolute;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding-top: 20%;
+            padding-left: 10%;
+            color: white;
+            font-size: 1.15rem;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            z-index: 1000; /* Assurez-vous que la navigation est au-dessus des autres éléments */
         }
-        .showClose {
-            
-            display: block;
+        
+        .showLink {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .link p {
+            padding: 6%;
+        }
+        
+        .close {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
             position: fixed;
             top: 10px;
             right: 10px;
             width: 7%;
             height: 4%;
         }
+        
+        .showClose {
+            opacity: 1;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 7%;
+            height: 4%;
+            z-index: 1001; /* Assurez-vous que le bouton de fermeture est au-dessus de la navigation */
+        }
+        
+        .reservation_p {
+            display: flex;
+        }
+        
     
         .reservation{
             display: none;
@@ -881,5 +898,3 @@ footer {
     display: none;
 }
 }
-
-
