@@ -763,6 +763,7 @@ footer .whatsapp:hover {
         padding-bottom: 5%;
     }
     .bungalowPicture {
+        transition: background-image 1s ;
         z-index: 10;
         /* border: solid black; */
         flex-basis: 56%;
@@ -772,6 +773,32 @@ footer .whatsapp:hover {
         background-size: cover;
         background-position: center;
         border-radius: 1ch 1ch 0 0;
+    }
+    .gris {
+        background-color: rgb(226, 224, 224);
+    }
+    .showBungalow1 {
+        background-image: url(../image/BUNGALOW_01_1.JPG);
+    }
+    
+    .showBungalow2 {
+        background-image: url(../image/BUNGALOW_02_1.JPG);
+    }
+    
+    .showBungalow3 {
+        background-image: url(../image/BUNGALOW_07_1.JPG);
+    }
+    
+    .showBungalow4 {
+        background-image: url(../image/BUNGALOW_04_1.JPG);
+    }
+    
+    .showBungalow5 {
+        background-image: url(../image/BUNGALOW_05_3.JPG);
+    }
+    
+    .showBungalow6 {
+        background-image: url(../image/BUNGALOW_08_2.JPG);
     }
     /* .allBungalow .title {
         display: none;
