@@ -31,19 +31,22 @@ nav{
     height: 10dvh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.514));
     margin: 0 auto;
-    padding: 0 5dvw;
+    padding: 0 3%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     .link{
+        /* background-color: green; */
         height: 50%;
         margin: auto 0;
-        width: 50%;
-        display: flex;
-        align-items: center;
+        flex-basis: 55%;
         justify-content: space-around;
+        display: flex;
+        flex-direction : row;
+        align-items: center;
+
         color: white;
         font-size: 1.1rem;
-        /* font-weight: bold; */
         .reservation_p {
             display: none;
         }
@@ -54,12 +57,14 @@ nav{
     }
 
     .reservation{
-        margin: auto 0;
         height: 50%;
         padding: 1dvh 1.5dvw;
         border-radius: 10ch;
         background-color: green;
         transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: white;
         text-align: center;
     }
@@ -70,14 +75,15 @@ nav{
         /* width: 8%;
         aspect-ratio: 1/1; */
         /* margin: 1dvh 0; */
-        width: 90%;
-        height: 100%;
+        width: 35%;
+        height: 75%;
     }
     .logo {
         /* border: 2px solid white; */
-        /* flex-basis: 20%; */
-        text-align: center;
-        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 20%;
     }
     p:hover{
         transform: scale(1.2);
@@ -95,6 +101,13 @@ nav{
         option{
             color: black;
         }
+    }
+    .reservationButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 40%;
     }
 }
 
@@ -378,8 +391,8 @@ nav{
         }
 
         select{
-            width: 100%;
-            height: 4dvh;
+            width: 60%;
+            height: 3dvh;
             color: white;
             background-color: transparent;
             border: 2px solid white;
@@ -533,26 +546,30 @@ footer .whatsapp:hover {
     header{
         background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
         background-size: cover;
+        background-position: center;
         height: 100dvh;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 20%;
         h2{
-            font-size: 4rem;
+            margin-bottom: 10%;
+            font-size: 2.5rem;
+            text-align: center;
             color: white;
         }
     
         span{
-            font-size: 2rem;
-            color: rgb(255, 253, 254); 
+            font-size: 1.25rem;
+            color: rgb(0, 0, 0); 
         }
     }
     
     p{
         transition: 0.5s;
     }
-    .reservation_p {
-        display: none;
-    }
+    
     nav{
         z-index: 1;
         position: fixed;
@@ -561,73 +578,82 @@ footer .whatsapp:hover {
         height: 10dvh;
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.514));
         margin: 0 auto;
-        padding: 0 5dvw;
+        padding: 0 3%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         .link{
-            right: 100%;
+            transition: 2s; 
+            background-color:rgb(41, 41, 41);
             position: absolute;
             height: 100vh;
-            background-color:  rgb(51, 51, 51);
-            width: 100%;
-            font-size: 1.5rem;
             left: 0;
-            display: flex;
-            flex-direction : column;
-            /* justify-content : space-around; */
-            gap: 7%;
-            /* padding-left: 15%; */
-            padding-top: 15%;
-            color: rgb(236, 74, 236);
+            right: 100%;
+            padding-top: 20%;
+            padding-left: 10%;
+            /* right: 0; */
+            color: white;
+            font-size: 1.15rem;
+            display: none;
             .reservation_p {
-                display: block;
+                display: flex;
             }
         }
-            .close {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                width: 8%;
-                height: 4%;
-            }
-            
-        .showNavigation {
+        .showLink {
             right: 0;
+            display: block;
         }
-    }
-        header {
-            color: rgb(51, 51, 51);
+        .link p {
+            padding:6%;
         }
+        .close{
+            display: none;
+        }
+        .showClose {
+            
+            display: block;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 7%;
+            height: 4%;
+        }
+    
         .reservation{
             display: none;
         }
         .reservation:hover{
             transform: scale(1.2);
         }
-        img{
-            /* width: 8%;
-            aspect-ratio: 1/1; */
-            /* margin: 1dvh 0; */
-            width: 100%;
-            height: 50%;
-            margin: 0 auto;
-
-        }
         .logo {
             /* border: 2px solid white; */
-            /* flex-basis: 20%; */
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            width: 18%;
-            height: 100%;
+            flex-basis: 20%;
+            img{
+                /* width: 8%;
+                aspect-ratio: 1/1; */
+                /* margin: 1dvh 0; */
+                width: 90%;
+                height: 50%;
+            }
         }
         p:hover{
-            transform: scale(1.2);
-            border-bottom: solid 1px white;
+            transform: scale(1.01);
+            /* border-bottom: solid 1px white; */
         }
-    
+        .menuBars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -10%;
+            .bars {
+                width: 27%;
+                height: 27%;
+            }
+
+        }
         select{
             height: fit-content;
             margin: auto 0;
@@ -638,25 +664,15 @@ footer .whatsapp:hover {
                 color: black;
             }
         }
-    }
-
-    .menuBars {
-        /* border: solid green; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-
+        .reservationButton {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 40%;
         }
     }
-    /* header h2 {
-        font-size: 10px;
-    }
-    header span {
-        font-size: 10px;
-    } */
-
+    
 
 main {
     display: none;
@@ -664,6 +680,6 @@ main {
 footer {
     display: none;
 }
-
 }
+
 

@@ -43,7 +43,11 @@ const fermer = document.querySelector(".close");
 const ouvrir = document.querySelector(".bars");
 const navigation = document.querySelector(".link");
 ouvrir.addEventListener('click',function(){
-    navigation.style.display = "flex";
+    navigation.classList.toggle("showLink");
+    fermer.classList.toggle("showClose");
 })
 fermer.addEventListener('click',function(){
-    navigation.style.display = "none"});
+    navigation.classList.remove("showLink");
+    fermer.classList.remove("showClose");
+    
+});
