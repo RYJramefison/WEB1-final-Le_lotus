@@ -301,7 +301,8 @@ nav{
 
 #Gastronomie{
     height: 100dvh;
-    border: solid black;
+    /* border: solid black; */
+    border-radius: 10ch 10ch 1ch 0.5ch;
     width: 60%;
     margin: 0 auto;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../image/406271593_856232949539372_4276330455097852888_n.jpg);
@@ -904,7 +905,8 @@ footer .whatsapp:hover {
 
     #Gastronomie{
         height: 100dvh;
-        border: solid black;
+        border-radius: 0.3ch;
+        /* border: solid black; */
         width: 90%;
         margin: 0 auto;
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../image/406271593_856232949539372_4276330455097852888_n.jpg);
