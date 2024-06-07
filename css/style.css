@@ -425,7 +425,7 @@ nav{
 
         select{
             width: 60%;
-            height: 3dvh;
+            height: 4dvh;
             color: white;
             background-color: transparent;
             border: 2px solid white;
@@ -901,4 +901,308 @@ footer .whatsapp:hover {
         background-size: cover;
         overflow: hidden;
     }
+
+    #Gastronomie{
+        height: 100dvh;
+        border: solid black;
+        width: 90%;
+        margin: 0 auto;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../image/406271593_856232949539372_4276330455097852888_n.jpg);
+        background-size: cover;
+        .gastro_content1{
+            display: flex;
+            height: 25%;
+            justify-content: space-around;
+        }
+    
+        h1{
+            color: rgb(233, 63, 233);
+            font-size: 3rem;
+            text-align: center;
+            span{
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: -2.7dvh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            span{
+                font-size: 0.8rem;
+            }
+        }
+    
+        .gastro_content1 div:first-child{
+            background-image: url(../image/PLATS_10.JPG);
+            background-size: cover;
+        }
+        .gastro_content1 div:nth-child(2){
+            background-image: url(../image/PLATS_16.JPG);
+            background-size: cover;
+        }
+    
+        .gastro_content2{
+            display: flex;
+            height: 25%;
+            justify-content: space-around;
+        }
+    
+        .gastro_content2 div:first-child{
+            background-image: url(../image/PLATS_22.JPG);
+            background-size: cover;
+        }
+    
+        .gastro_content2 div:nth-child(2){
+            background-image: url(../image/PLATS_25.JPG);
+            background-size: cover;
+        }
+        .gastro1{
+            border: 2px solid rgb(48, 163, 48);
+            width: 45%;
+            height: 80%;
+            margin: auto 0;
+            aspect-ratio: 1/1;
+            /* transform: rotate(45deg); */
+            border-radius: 2ch;
+            background-position: center;
+        }
+        .gastro3{
+            border: 4px solid rgb(48, 163, 48);
+            width: 80%;
+            height: 30%;
+            margin-inline:  auto;
+            aspect-ratio: 1/1;
+            /* transform: rotate(45deg); */
+            border-radius: 2ch;
+            background-image: url(../image/318607761_529092182577575_2559613292856495025_n.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+    }
+    
+    footer {
+        height: 55dvh;
+        background-color: rgb(10, 10, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .contact {
+        display: flex;
+        height: 100%;
+        /* flex-basis: 91%; */
+        flex-direction: column;
+        gap: 3%;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    /* .contact1,.contact2,.contact3 {
+        width: 30%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .contact1{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 4% ;
+    }
+
+    .contact2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .contact3{
+        margin-top: 2%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contact1 .pictureJRAM {
+        margin-top: 20px ;
+        margin-left: -10px;
+        width: 50%;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contact1 .pictureJRAM img {
+        width: 33%;
+        height: 80%;
+    }
+    .contact1 .pictureJRAM p {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .contact1 .pictureJRAM p::after {
+        color: rgb(220, 49, 247);
+        content: "s";
+    }
+    .contact1 .description p{
+        color: rgb(168, 168, 168);
+    }
+    .contact1 .description {
+        color: white;
+        
+        flex-basis: 33%;
+    }
+    
+    
+    .contact3 img {
+        width: 1.4vw;
+        height: 2.5vh;
+        margin-bottom: -25%;
+        display: flex;
+        padding-inline: 7%;
+        
+    } 
+    .imageContact3 {
+        width: 13%;
+        height: 4vh;
+        border-radius: 1ch 0 1ch 0;
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 5%; */
+        transition: 0.5s;
+        left: 0;
+    }
+    footer .facebook:hover {
+        background-color: rgb(83, 83, 239);
+    }
+    footer .whatsapp:hover {
+        background-color: rgb(25, 189, 33);
+    }
+    .containContact a {
+        color: white;
+        cursor: pointer;
+    }
+    .contact2 p {
+        color: rgb(168, 168, 168);
+    }
+    .contact2 .title {
+        color: white;
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+    .contact3 p {
+        color: white;
+    }
+    .containContact {
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .containContact img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    #Reservation{
+        padding-top: 3dvh;
+        height: 90dvh;
+        width: 90%;
+        margin-top: 10dvh;
+        margin-inline: auto;
+        background: linear-gradient(rgba(26, 8, 26, 0.781), rgba(0, 0, 0, 0.719)), url(../image/EXTERIEUR_15.JPG);
+        background-size: cover;
+        h1{
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    
+        .one{
+            height: fit-content;
+            width: 100%;
+            div{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                gap: 2dvw;
+                margin-bottom: 1dvh;
+            }
+    
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                filter: invert(100%);
+            }
+    
+            input{
+                width: 100%;
+                height: 4dvh;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                outline: none;
+            }
+    
+            select{
+                width: 80%;
+                height: 4dvh;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                outline: none;
+                option{
+                    background-color: rgba(204, 34, 204, 0.295);
+                    color: black;
+                }
+            }
+        }
+        form{
+            height: 70%;
+            width: 90%;
+            margin: 5dvh auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2dvh;
+            color: white;
+            .button_reservation{
+                width: 60%;
+                height: 5dvh;
+                background-color: rgb(212, 45, 157);
+                border-radius: 10ch;
+                margin: 0 auto;
+                margin-top: 3dvh;
+                button{
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                }
+            }
+        }
+    
+        img{
+            height: 2rem;
+        }
+    }
 }
+
+
