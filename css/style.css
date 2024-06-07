@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 @media screen and (min-width: 700px) {
+    * {
+        font-family: Poppins;
+    }
 header{
     background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
     background-size: cover;
@@ -9,11 +13,13 @@ header{
     text-align: center;
     padding-top: 20%;
     h2{
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 4rem;
         color: white;
     }
-
+    
     span{
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 2rem;
         color: rgb(255, 253, 254); 
     }
@@ -569,7 +575,9 @@ footer .whatsapp:hover {
 }
 
 @media only screen and (max-width: 700px) {
-
+    * {
+        font-family: Poppins;
+    }
     header{
         margin-bottom: 15%;
         background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
@@ -582,6 +590,7 @@ footer .whatsapp:hover {
         align-items: center;
         padding-top: 20%;
         h2{
+            /* font-family: Arial, Helvetica, sans-serif; */
             margin-bottom: 7%;
             font-size: 2.5rem;
             text-align: center;
@@ -589,7 +598,7 @@ footer .whatsapp:hover {
         }
     
         span{
-            font-size: 1.20rem;
+            font-size: 1.05rem;
             color: rgb(0, 0, 0); 
         }
     }
@@ -610,42 +619,59 @@ footer .whatsapp:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .link{
-            transition: 2s; 
-            background-color:rgb(41, 41, 41);
-            position: absolute;
-            height: 100vh;
-            left: 0;
-            right: 100%;
-            padding-top: 20%;
-            padding-left: 10%;
-            /* right: 0; */
-            color: white;
-            font-size: 1.15rem;
-            display: none;
-            .reservation_p {
-                display: flex;
-            }
-        }
-        .showLink {
-            right: 0;
-            display: block;
-        }
         .link p {
             padding:6%;
         }
-        .close{
-            display: none;
+        .link {
+            background-color: rgb(41, 41, 41);
+            position: absolute;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding-top: 20%;
+            padding-left: 10%;
+            color: white;
+            font-size: 1.15rem;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            z-index: 1000; /* Assurez-vous que la navigation est au-dessus des autres éléments */
         }
-        .showClose {
-            
-            display: block;
+        
+        .showLink {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .link p {
+            padding: 6%;
+        }
+        
+        .close {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
             position: fixed;
             top: 10px;
             right: 10px;
             width: 7%;
             height: 4%;
         }
+        
+        .showClose {
+            opacity: 1;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 7%;
+            height: 4%;
+            z-index: 1001; /* Assurez-vous que le bouton de fermeture est au-dessus de la navigation */
+        }
+        
+        .reservation_p {
+            display: flex;
+        }
+        
     
         .reservation{
             display: none;
@@ -1099,7 +1125,7 @@ footer .whatsapp:hover {
     #Reservation{
         padding-top: 3dvh;
         height: 90dvh;
-        width: 80%;
+        width: 90%;
         margin-top: 10dvh;
         margin-inline: auto;
         background: linear-gradient(rgba(26, 8, 26, 0.781), rgba(0, 0, 0, 0.719)), url(../image/EXTERIEUR_15.JPG);
