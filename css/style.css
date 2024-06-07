@@ -901,9 +901,4 @@ footer .whatsapp:hover {
         background-size: cover;
         overflow: hidden;
     }
-    
-#Gastronomie,#Reservation {display: none;}
-footer {
-    display: none;
-}
 }
