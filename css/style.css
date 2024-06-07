@@ -147,12 +147,39 @@ nav{
     margin-bottom: 3%;
 }
 .bungalowPicture {
+    transition: background-image 1s ;
     /* border: solid black; */
     flex-basis: 56%;
     background-image: url(../image/BUNGALOW_01_1.JPG);
     background-size: cover;
     background-position: center;
     border-radius: 0 1ch 1ch 0;
+}
+.gris {
+    background-color: rgb(226, 224, 224);
+}
+.showBungalow1 {
+    background-image: url(../image/BUNGALOW_01_1.JPG);
+}
+
+.showBungalow2 {
+    background-image: url(../image/BUNGALOW_02_1.JPG);
+}
+
+.showBungalow3 {
+    background-image: url(../image/BUNGALOW_07_1.JPG);
+}
+
+.showBungalow4 {
+    background-image: url(../image/BUNGALOW_04_1.JPG);
+}
+
+.showBungalow5 {
+    background-image: url(../image/BUNGALOW_05_3.JPG);
+}
+
+.showBungalow6 {
+    background-image: url(../image/BUNGALOW_08_2.JPG);
 }
 .title {
     font-size: xx-large;
@@ -555,14 +582,14 @@ footer .whatsapp:hover {
         align-items: center;
         padding-top: 20%;
         h2{
-            margin-bottom: 10%;
+            margin-bottom: 7%;
             font-size: 2.5rem;
             text-align: center;
             color: white;
         }
     
         span{
-            font-size: 1.25rem;
+            font-size: 1.20rem;
             color: rgb(0, 0, 0); 
         }
     }

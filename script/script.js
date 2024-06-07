@@ -51,3 +51,24 @@ fermer.addEventListener('click',function(){
     fermer.classList.remove("showClose");
     
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const bungalows = document.querySelectorAll('.bungalowImage');
+    const bungalowPicture = document.querySelector('.bungalowPicture');
+
+    bungalows.forEach(bungalow => {
+        bungalow.addEventListener('click', () => {
+            bungalows.forEach(b => b.style.backgroundColor = '');
+
+            bungalow.style.backgroundColor = 'rgb(226, 224, 224)';
+            bungalowPicture.className = bungalowPicture.className.replace(/\bshowBungalow\S+/g, '');
+
+            const bungalowId = bungalow.id;
+            bungalowPicture.classList.add(`show${bungalowId.charAt(0).toUpperCase() + bungalowId.slice(1)}`);
+        });
+    });
+});
+
