@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 @media screen and (min-width: 700px) {
+    * {
+        font-family: Poppins;
+    }
 header{
     background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
     background-size: cover;
@@ -9,11 +13,13 @@ header{
     text-align: center;
     padding-top: 20%;
     h2{
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 4rem;
         color: white;
     }
-
+    
     span{
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 2rem;
         color: rgb(255, 253, 254); 
     }
@@ -569,7 +575,9 @@ footer .whatsapp:hover {
 }
 
 @media only screen and (max-width: 700px) {
-
+    * {
+        font-family: Poppins;
+    }
     header{
         margin-bottom: 15%;
         background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
@@ -582,6 +590,7 @@ footer .whatsapp:hover {
         align-items: center;
         padding-top: 20%;
         h2{
+            /* font-family: Arial, Helvetica, sans-serif; */
             margin-bottom: 7%;
             font-size: 2.5rem;
             text-align: center;
@@ -589,7 +598,7 @@ footer .whatsapp:hover {
         }
     
         span{
-            font-size: 1.20rem;
+            font-size: 1.05rem;
             color: rgb(0, 0, 0); 
         }
     }
