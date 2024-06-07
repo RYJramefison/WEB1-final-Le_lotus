@@ -544,6 +544,7 @@ footer .whatsapp:hover {
 @media only screen and (max-width: 700px) {
 
     header{
+        margin-bottom: 15%;
         background: linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0, 0, 0.4)), url(../image/308730508_596184905544179_4682401747476039275_n.jpg);
         background-size: cover;
         background-position: center;
@@ -674,7 +675,8 @@ footer .whatsapp:hover {
     }
     
     #nosBungalow {
-        margin: 5% 15%;
+        margin-inline: 5%;
+        margin-top: 5%;
         height: 88vh;
         display: flex;
         flex-direction: column;
@@ -770,8 +772,7 @@ footer .whatsapp:hover {
 
 
     #activite {
-        height: 90vh;
-        margin: 5% 1%;
+        height: 210vh;
         /* border: solid black; */
         display: flex;
         flex-direction: column;
@@ -790,6 +791,7 @@ footer .whatsapp:hover {
         margin-top: 7dvh;
         flex-basis: 80%;
         display: flex;
+        flex-direction: column;       
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -800,36 +802,51 @@ footer .whatsapp:hover {
     }
     .descriptionActivite {
         padding-left: 2vw;
-        width: 27%;
+        width: 90%;
         background:linear-gradient(rgba(12, 12, 12, 0.7),rgba(0, 0, 0, 0.651)), url(../image/EXTERIEUR_13.JPG);
         background-size: cover;
-        height: 45%;
+        height: 16%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: left;
+        margin-bottom: -3%;
+        padding-inline: 10%;
     }
     .pictureActivite {
+        margin-top: -2%;
         background-size: 200%;
         background-position: right;
-        width: 27%;
-        height: 53%;
+        width: 90%;
+        height: 16%;
         margin-top: -2%;
     }
-    .activite1 {
-        background-image: url(../image/EXTERIEUR_05.JPG);
+    .descriptionActivite1 {
+        border-radius:  2.5ch 2.5ch 0 0;
+        /* margin-inline: 5%; */
+
     }
-    .activite2 {
+    .descriptionActivite2 {
+        width: 93%;
+        border-radius: 1rem 0 0 0;
+        
+    }
+    .activite1 {
         background-image: url(../image/FB_IMG_17173536922294724.jpg);
         background-size: cover;
     }
-    .activite3 {
+    .activite2 {
         background-image: url(../image/FB_IMG_17173537921220110.jpg);
+        background-size: cover;
+        width: 93%;
+        border-radius: 0 0 1rem 0;
+    }
+    .activite3 {
+        background-image: url(../image/EXTERIEUR_05.JPG);
+        border-radius: 0 0 2.5ch 2.5ch;
         /* background:linear-gradient(rgba(227, 222, 69, 0.002),rgba(237, 224, 161, 0.151)), url(../image/FB_IMG_17173537921220110.jpg); */
         background-size: cover;
-    }
-    .descLast {
-        margin-top: -5%;
+        overflow: hidden;
     }
     
 #Gastronomie,#Reservation {display: none;}
